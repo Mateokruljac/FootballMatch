@@ -3,7 +3,7 @@ from gtts import gTTS
 import time
 
 
-class Playsound () :
+class Playsound :
     
     def song (self,audio):
         time.sleep(0.2)
