@@ -1,3 +1,4 @@
+#testiranje gita
 import random
 class Team:
     def __init__(self,name):
