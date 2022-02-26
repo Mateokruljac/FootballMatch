@@ -1,4 +1,3 @@
-import pygame 
 import random
 class Team:
     def __init__(self,name):
