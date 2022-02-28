@@ -27,31 +27,24 @@ class EmailAddress():
                           Your BHS \N{winking face}""")
                 exit()
 class Card(EmailAddress): # class EmailAdress is in class Card
-    def __init__(self,name,balance):
-        self.name = name #your username
+    def  __init__ (self):
+         #your username
         self.check_address() # we call method check_address from class EmailAddress
-        name = self.Emailaddress[0] #first part of EmailAddress to @
-        self.balance = balance # your currently 
-        print("Username:",name) 
-        print("Balance:",balance) #currently balance
+        self.name = self.Emailaddress[0] #first part of EmailAddress to @
+        self.balance = 1000 # your currently 
+        print("Username:",self.name) 
+        print("Balance:",self.balance) #currently balance
+        self.amount = int(input("Amount: "))
         
-    def amount (self): # method of class Card
-        #self.amount_ = amounts #amount for betting 
-        self.amount_ = int(input("Amount: "))
-        if self.amount_ <= self.balance:
-           self.new_balance_after_ticket_pay = self.balance - self.amount_
+    def amounts (self): # method of class Card
+        if self.amount <= self.balance:
+           self.new_balance_after_ticket_pay = self.balance - self.amount
            print(f"New balance after paid ticket: {self.new_balance_after_ticket_pay}  Kn")
         else:
             print("You do not have enough money!")
             exit()
     
     
-class Bet (Card): # class Card in class Bet
-    def __init__(self,name,balance):
-        super().__init__(name,balance)
-        # class Bet gets __init__ from class Card
-    def amount (self):
-        super().amount()
 
     
         
